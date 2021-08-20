@@ -26,8 +26,6 @@
 // @require           https://cdn.staticfile.org/jquery/1.12.4/jquery.min.js
 
 // @require           https://cdn.bootcdn.net/ajax/libs/jquery.qrcode/1.0/jquery.qrcode.min.js
-
-// @antifeature       referral-link 【本优惠券查询脚本将会对商品地址进行转换，但不会自动进行转跳，需自己点击领取或转跳，便不会隐私泄漏或支付安全等问题，请放心使用...】
 // @grant       unsafeWindow
 // @grant        GM_registerMenuCommand
 // @grant        GM_getValue
