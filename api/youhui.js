@@ -6,8 +6,8 @@
 // @icon         https://tk.xunhuo.vip/favicon.ico
 // @author       寻货购物
 // @connect      xunhuo.vip
-// @updateURL         https://www.baiduyun.wiki/panlinker.4user.js
-// @downloadURL       https://www.baiduyun.wiki/panlinker.4user.js
+// @updateURL         https://tk.xunhuo.vip/api/youhui.js
+// @downloadURL       https://tk.xunhuo.vip/api/youhui.js
 // @match       *.taobao.com/*
 
 // @match       *.tmall.com/*
