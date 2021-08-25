@@ -1,0 +1,154 @@
+.quan{
+
+border: 1px solid #ff451b;
+    color: #ff451b;
+    font-size: 20px;
+    display: inline-block;
+    height: 80px;
+    width: 400px;
+    position: relative;
+    top: 10px;
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+    overflow: hidden;
+	border-left-style: none;
+}
+
+.quan-jine{
+background: #ff451b;
+    color: #fff;
+
+    float: left;
+    font-family: Arial padding: 20px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 220px;
+}
+.quan a{
+color:#ff451b
+}
+a#by{
+color: #42403f;!important;
+    font-size: 18px;!important;
+}
+
+.quan-get
+{
+display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    font-size: 20px;
+    padding: 25px;
+}
+
+.quan1 time {
+margin-top: 10px;
+    color: #f33c13;
+}
+.quan:before
+{position:absolute;width:10px;height:10px;-webkit-border-radius:50%;border-radius:50%;left:-3px;top:50%;margin-top:-2px;content:'';background-color:#f7f8fc}
+.tmall-quan
+{border:1px solid #34BF0B}
+.tmall-quan b
+{background:-webkit-gradient(linear,left bottom,left top,from(#33B206),to(#35CC0F));background:linear-gradient(360deg,#33B206 0,#35CC0F 100%)}
+.tmall-quan a
+{color:#1690FF}
+
+.quan-time {
+	color: #ff8440;
+	margin-top: 5px;
+}
+
+.tb-quan {position: relative;}
+
+
+
+.tb-quan-area {
+
+    top: 2px;
+    right: 2px;
+	 position: absolute;
+    z-index: 9999;
+}
+
+
+.tb-quan-wait {cursor: pointer;}
+
+
+.tb-quan-info {
+
+	padding: 10px 10px!important;
+	font-size: 15px;
+	color: #fff!important;
+	cursor: pointer;
+}
+
+.tb-quan-info,.tb-quan-info:hover,.tb-quan-info:visited {
+	text-decoration: none!important;
+}
+
+.tb-quan-info-default {
+background: #376bb3!important;
+}
+
+.tb-quan-info-find {
+background: #f90e02!important;
+}
+
+.tb-quan-info-empty {
+color: #0e0000!important;
+background: #f5f3f3!important;
+}
+
+.tb-quan-tmd {opacity: .5;}
+
+.quan-btn-sku {
+margin-right: 10px;
+    float: left;
+    overflow: hidden;
+    position: relative;
+    width: 180px;
+    color: #e81743;
+    height: 50px;
+    background: #f10743;
+}
+
+.quan-btn-sku a {
+float: left;
+    overflow: hidden;
+    position: relative;
+    width: 178px;
+    background-color: #f90606;
+    border: 1px solid #fbf4f6;
+    color: #f7edef;
+    font-family: 'Microsoft Yahei';
+    height: 100%;
+    text-align: center;
+    white-space: nowrap;
+    justify-content: center;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+/\**pdd**/\
+.buy-with-coupon1 {
+    background: #e61b10;
+    border-radius: 2px;
+    color: #fff;
+    margin-left: 10px;
+}
+
+#qrcode {
+position: fixed;bottom: 3px;right:39px;z-index: 9999;
+}
+
+#qrcode2 {
+bottom: 5px;left: 10px;position: fixed;z-index: 9999;
+}
+
+a.xunhuoapp{position: relative;font-size: 25px;}.xunhuoapp img.qrcode{position:absolute;z-index:99;top:35px;width:7.5rem;max-width:none;height:7.5rem;transform:scale(0);transform-origin:top right;opacity:0;border:.3125rem solid #0085ba;border-radius:.25rem;-webkit-transition:all .4s ease-in-out;-o-transition:all .4s ease-in-out;transition:all .4s ease-in-out;}.xunhuoapp:hover img.qrcode{transform:scale(1);opacity:1;}
