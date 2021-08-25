@@ -6,8 +6,8 @@
 // @icon         https://tk.xunhuo.vip/favicon.ico
 // @author       寻货购物
 // @connect      xunhuo.vip
-// @updateURL         https://tk.xunhuo.vip/api/youhui.js
-// @downloadURL       https://tk.xunhuo.vip/api/youhui.js
+// @updateURL         https://cdn.jsdelivr.net/gh/wuzhanshen/xunhuoyouhui@master/api/youhui.js
+// @downloadURL       https://cdn.jsdelivr.net/gh/wuzhanshen/xunhuoyouhui@master/api/youhui.js
 // @match       *.taobao.com/*
 
 // @match       *.tmall.com/*
@@ -55,7 +55,7 @@
 
     document.getElementsByTagName('HEAD').item(0).appendChild(style);
 
- 
+
     var url = location.href;
     var name = $(document).attr('title');//$('input[name=title]').attr('value');
     var biaoti = name.split('-');
@@ -104,10 +104,10 @@
               '<a class="quan-get" target="blank" href="' + so +''+ encodeURI(biaoti[0]) +'">搜索类似商品</a></div>';
             var wuyouhui = '<div class="quan"><b class="quan-jine">未查询到优惠券,本商品没有优惠，请尝试搜索</b>'+
               '<a class="quan-get" target="blank" href="' + so +''+ encodeURI(biaoti[0]) +'">搜索类似商品</a></div>';
-           
+
             var saoma = '<div id="qrcode2"><p class="ma-top">手机扫码领取优惠券</p></div>';
 
- 
+
 
             if (url.indexOf('//chaoshi.detail.tmall.') != -1 || url.indexOf('//detail.tmall.') != -1)
             {
@@ -176,8 +176,8 @@
             name = $('meta[name=keywords]').attr('content');
       $.getJSON('https://tb.xunhuo.vip/api/jd.php?id='+id,function(data) {
             console.log(data);
-            
-           
+
+
             var saoma = '<div id="qrcode2"><p class="ma-top"><b>使用手机扫码领取优惠券</b></p></div>';
             var jd =   '<a href="https://jk.xunhuo.vip/?ah=detail&id='+ encodeURI(id) +'" class="btn-special2 btn-lg" style="margin-right: 10px;" target="_blank">领取优惠券</a>';
             var jd2 =   '<a href="http://jk.xunhuo.vip/?ah=total&kw=' + data.data.goods_name + '" class="btn-special2 btn-lg" style="margin-right: 10px;" title="搜索全网有优惠券的商品，请自行输入关键字，尽量简短。" target="_blank">京东全网搜索</a>';
@@ -287,7 +287,7 @@ else {
             else{
           $sousuo.addClass("tb-quan")
             }
-            var id = $sousuo.attr("data-nid");
+            var id = $sousuo.attr("data-id");
             if (!id || parseInt(id) != id || id <= 10000)
             {
           id = $sousuo.attr("data-itemid");
@@ -334,9 +334,9 @@ else {
             var $sousuo = $(selector);
             $sousuo.removeClass("tb-quan-wait");
             var id = $sousuo.attr("data-nid");
-            $.getJSON('https://tb.xunhuo.vip/api/zhekou.php?id='+id,function(data) {
-          if (data.tbk_privilege_get_response.result.data.coupon_amount) {
-              $sousuo.html('<a target="_blank" class="tb-quan-info tb-quan-info-find" >有优惠（有' + data.tbk_privilege_get_response.result.data.coupon_amount + '元券）</a>');
+            $.getJSON('https://tb.xunhuo.vip/api/tbhd.php?id='+id,function(data) {
+          if (data.data.couponmoney > 1) {
+              $sousuo.html('<a target="_blank" class="tb-quan-info tb-quan-info-find" >有优惠（有' + data.data.couponmoney + '元券）</a>');
           } else {
               $sousuo.addClass("tb-quan-tmd");
               $sousuo.html('<a href="javascript:void(0);" class="tb-quan-info tb-quan-info-empty">暂无优惠券</a>');
